@@ -20,4 +20,8 @@ public class BindServiceActivity extends AppCompatActivity {
     public void stopBindServiceFun(View view){
 
     }
+
+    public void finishBindServiceFun(View view){
+        finish();
+    }
 }
