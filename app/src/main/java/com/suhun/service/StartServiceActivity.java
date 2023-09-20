@@ -2,6 +2,7 @@ package com.suhun.service;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.SeekBar;
@@ -25,14 +26,18 @@ public class StartServiceActivity extends AppCompatActivity {
     }
 
     public void startStartService(View view){
-
+        Intent intent = new Intent(this, MyStartService.class);
+        startService(intent);
     }
 
     public void stopStartService(View view){
-
+        Intent intent = new Intent(this, MyStartService.class);
+        stopService(intent);
     }
 
     public void finishStartService(View view){
+        Intent intent = new Intent(this, MyStartService.class);
+        stopService(intent);
         finish();
     }
 }
