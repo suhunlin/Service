@@ -33,6 +33,6 @@ public class StartServiceActivity extends AppCompatActivity {
     }
 
     public void finishStartService(View view){
-
+        finish();
     }
 }
